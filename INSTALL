@@ -1,0 +1,9 @@
+Building OmniCoin
+
+See doc/readme-qt.rst for instructions on building OmniCoin-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of OmniCoin.
+
+See doc/build-*.txt for instructions on building OmniCoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of OmniCoin.
