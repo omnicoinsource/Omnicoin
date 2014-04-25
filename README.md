@@ -11,7 +11,7 @@
     Address Version: 115 (0x73)
     Magic Bytes: \\0xd4\\0xcb\\0xa1\\0xef
 
-\#\#Sample `omnicoin.conf` file
+##Sample `omnicoin.conf` file
 
     rpcuser=user
     rpcpassword=password
