@@ -1,24 +1,28 @@
 # Omnicoin
 
- Algorithm: scrypt
+\~\~\~
 
- Coins per block: 68.55
+Algorithm: scrypt
 
- Block Target Time: 180 Seconds
+Coins per block: 68.55
 
- Difficulty retargeting: KGW (Every Block)
+Block Target Time: 180 Seconds
 
- Total Coins: 13,371,337
+Difficulty retargeting: KGW (Every Block)
 
- RPC Port: 43555
+Total Coins: 13,371,337
 
- P2P Port: 43556
+RPC Port: 43555
 
- Testnet Port: 43557
+P2P Port: 43556
 
- Address Version: 115 (0x73)
+Testnet Port: 43557
 
- Magic Bytes: \\0xd4\\0xcb\\0xa1\\0xef
+Address Version: 115 (0x73)
+
+Magic Bytes: \\0xd4\\0xcb\\0xa1\\0xef
+
+\~\~\~
 
 Recoded by: Crypto Miner
 http://www.hackforums.net/member.php?action=profile&uid=1302310
