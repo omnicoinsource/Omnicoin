@@ -15,5 +15,7 @@ Coded by: Crypto Miner
 http://www.hackforums.net/member.php?action=profile&uid=1302310
 
 With contributions from:
+
 Doctor Blue
+
 Pillows
