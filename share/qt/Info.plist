@@ -3,7 +3,7 @@
 <plist version="0.9">
 <dict>
 	<key>CFBundleIconFile</key>
-	<string>leafcoin.icns</string>
+	<string>omnicoin.icns</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleGetInfoString</key>
@@ -15,19 +15,19 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>Leafcoin-Qt</string>
+	<string>Omnicoin-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.leafcoin.Leafcoin-Qt</string>
+	<string>org.omnicoin.Omnicoin-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>org.leafcoin.LeafcoinPayment</string>
+            <string>org.omnicoin.OmnicoinPayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
-              <string>leafcoin</string>
+              <string>omnicoin</string>
             </array>
           </dict>
         </array>
