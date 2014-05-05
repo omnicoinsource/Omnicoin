@@ -31,7 +31,7 @@ Unpack the files into a directory and run:
 - bin/64/omnicoin-qt (GUI, 64-bit)
 - bin/64/omnicoind (headless, 64-bit)
 
-See the documentation at the [Omnicoin Wiki](http://omnicoin.info)
+See the documentation at the [Omnicoin Website](http://www.omnicoin.pw/)
 for help and more information.
 
 
