@@ -1,4 +1,4 @@
-TOR SUPPORT IN BITCOIN
+TOR SUPPORT IN BITCOIN/Omnicoin
 ======================
 
 It is possible to run Omnicoin as a Tor hidden service, and connect to such services.
