@@ -25,10 +25,11 @@
     server=1
     daemon=1
 
-Coded by: Crypto Miner
-http://www.hackforums.net/member.php?action=profile&uid=1302310
+Coded by: [Crypto Miner](http://www.hackforums.net/member.php?action=profile&uid=1302310)
 
 With contributions from:
+
+[Caffeinewriter](http://brandonanzaldi.com/)
 
 Doctor Blue
 
