@@ -1,35 +1,11 @@
-# Omnicoin
+<div align="center"><h1>Welcome to <b>Omnicoin</b></h1></div>
 
-    Algorithm: scrypt
-    Coins per block: 68.55
-    Block Target Time: 180 Seconds
-    Difficulty retargeting: KGW (Every Block)
-    Total Coins: 13,371,337
-    RPC Port: 43555
-    P2P Port: 43556
-    Testnet Port: 43557
-    Address Version: 115 (0x73)
-    Magic Bytes: \\0xd4\\0xcb\\0xa1\\0xef
+<div align="center">A cryptocurrency for MyBB communities</div>
 
-## Sample client `omnicoin.conf` file
 
-    addnode=192.99.42.164
-    addnode=192.99.42.206
-    addnode=192.99.42.238
-    addnode=204.44.122.123
+<div align="center"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5cGH94w6MbLPaBojOdBAVmPM9pbqJm3LIn2gNd4tPKd1F8qbgmg" /></div>
 
-## Sample server `omnicoin.conf` file
-
-    rpcuser=user
-    rpcpassword=password
-    addnode=192.99.42.164
-    addnode=192.99.42.206
-    addnode=192.99.42.238
-    addnode=204.44.122.123
-    rpcport=43555
-    server=1
-    daemon=1
-
+<div align="center">Visit the <a href="https://github.com/Omnicoin-Project/Omnicoin/wiki">Omnicoin Wiki</a> for more information</div>
 
 ## Contributors
 **Developer:** [Crypto Miner](http://www.hackforums.net/member.php?action=profile&uid=1302310)
