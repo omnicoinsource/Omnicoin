@@ -1,11 +1,11 @@
-<div align="center"><h1>Welcome to <b>Omnicoin</b></h1></div>
+Omnicoin
+========
+_A cryptocurrency for MyBB communities_
 
-<div align="center">A cryptocurrency for MyBB communities</div>
 
+![alt tag](https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5cGH94w6MbLPaBojOdBAVmPM9pbqJm3LIn2gNd4tPKd1F8qbgmg)
 
-<div align="center"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5cGH94w6MbLPaBojOdBAVmPM9pbqJm3LIn2gNd4tPKd1F8qbgmg" /></div>
-
-<div align="center">Visit the <a href="https://github.com/Omnicoin-Project/Omnicoin/wiki">Omnicoin Wiki</a> for more information</div>
+Visit the [Omnicoin Wiki](https://github.com/Omnicoin-Project/Omnicoin/wiki) for more information
 
 ## Contributors
 **Developer:** [Crypto Miner](http://www.hackforums.net/member.php?action=profile&uid=1302310)
