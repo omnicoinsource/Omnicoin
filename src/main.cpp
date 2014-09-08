@@ -1790,18 +1790,18 @@ bool SetBestChain(CValidationState &state, CBlockIndex* pindexNew)
     // Find the fork (typically, there is none)
     CBlockIndex* pfork = view.GetBestBlock();
     CBlockIndex* plonger = pindexNew;
-    while (pfork->pprev && pfork != plonger)
+    while (pfork && pfork != plonger)
     {
         while (plonger->nHeight > pfork->nHeight) {
             plonger = plonger->pprev;
             assert(plonger != NULL);
         }
-        if (pfork == plonger  || pfork->pprev == NULL)
+        if (pfork == plonger)
             break;
         pfork = pfork->pprev;
+        assert(pfork != NULL);
     }
-    assert(pfork != NULL);
-    
+
     // List of what to disconnect (typically nothing)
     vector<CBlockIndex*> vDisconnect;
     for (CBlockIndex* pindex = view.GetBestBlock(); pindex != pfork; pindex = pindex->pprev)
