@@ -17,6 +17,19 @@ CONFIG += thread
 # Dependency library locations can be customized with:
 #    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
 #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
+BOOST_LIB_SUFFIX=-mgw46-mt-sd-1_55
+BOOST_INCLUDE_PATH=C:/deps/boost_1_55_0
+BOOST_LIB_PATH=C:/deps/boost_1_55_0/stage/lib
+BDB_INCLUDE_PATH=c:/deps/db/build_unix
+BDB_LIB_PATH=c:/deps/db/build_unix
+OPENSSL_INCLUDE_PATH=c:/deps/openssl-1.0.1j/include
+OPENSSL_LIB_PATH=c:/deps/openssl-1.0.1j
+MINIUPNPC_LIB_SUFFIX=-miniupnpc
+MINIUPNPC_INCLUDE_PATH=C:/deps/deps/miniupnpc
+MINIUPNPC_LIB_PATH=C:/deps/deps/miniupnpc
+QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.4
+QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.4/.libs
+LIBPNG_INCLUDE_PATH=C:/deps/libpng-1.6.14
 
 
 
