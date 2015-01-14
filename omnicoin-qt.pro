@@ -18,18 +18,20 @@ CONFIG += static
 # Dependency library locations can be customized with:
 #    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
 #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
-BOOST_LIB_SUFFIX=-mgw49-mt-s-1_55
-BOOST_INCLUDE_PATH=C:/omnicoin/deps/boost
-BOOST_LIB_PATH=C:/omnicoin/deps/boost/stage/lib
-BDB_INCLUDE_PATH=c:/omnicoin/deps/db/build_unix
-BDB_LIB_PATH=c:/omnicoin/deps/db/build_unix
-OPENSSL_INCLUDE_PATH=c:/omnicoin/deps/openssl/include
-OPENSSL_LIB_PATH=c:/omnicoin/deps/openssl
-MINIUPNPC_INCLUDE_PATH=C:/omnicoin/deps/
-MINIUPNPC_LIB_PATH=C:/omnicoin/deps/upnpc
-QRENCODE_INCLUDE_PATH=C:/omnicoin/deps/qrencode
-QRENCODE_LIB_PATH=C:/omnicoin/deps/qrencode/.libs
 
+win32 {
+	BOOST_LIB_SUFFIX=-mgw49-mt-s-1_55
+	BOOST_INCLUDE_PATH=C:/omnicoin/deps/boost
+	BOOST_LIB_PATH=C:/omnicoin/deps/boost/stage/lib
+	BDB_INCLUDE_PATH=c:/omnicoin/deps/db/build_unix
+	BDB_LIB_PATH=c:/omnicoin/deps/db/build_unix
+	OPENSSL_INCLUDE_PATH=c:/omnicoin/deps/openssl/include
+	OPENSSL_LIB_PATH=c:/omnicoin/deps/openssl
+	MINIUPNPC_INCLUDE_PATH=C:/omnicoin/deps/
+	MINIUPNPC_LIB_PATH=C:/omnicoin/deps/miniupnpc
+	QRENCODE_INCLUDE_PATH=C:/omnicoin/deps/qrencode
+	QRENCODE_LIB_PATH=C:/omnicoin/deps/qrencode/.libs
+}
 
 
 
