@@ -1267,11 +1267,7 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
 	if (pindexLast->nHeight == 160)
 		return bnStartDifficulty.GetCompact();
 
-	if (pindexLast->nHeight > 140000) {
-		return GetNextWorkRequiredDGW(pindexLast, pblock);
-	} else {
-		return GetNextWorkRequiredKGW(pindexLast, pblock);
-	}
+	return GetNextWorkRequiredKGW(pindexLast, pblock);
 }
 
 bool CheckProofOfWork(uint256 hash, unsigned int nBits)
