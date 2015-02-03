@@ -37,7 +37,14 @@ win32 {
 	QRENCODE_INCLUDE_PATH=C:/omnicoin/deps/qrencode
 	QRENCODE_LIB_PATH=C:/omnicoin/deps/qrencode/.libs
 }
-
+macx {
+        BDB_LIB_PATH = /usr/local/opt/berkeley-db4/lib
+        BDB_INCLUDE_PATH = /usr/local/opt/berkeley-db4/include
+        BOOST_LIB_PATH = /usr/local/opt/boost/lib
+        BOOST_INCLUDE_PATH = /usr/local/opt/boost/include
+        OPENSSL_LIB_PATH = /usr/local/opt/openssl/lib
+        OPENSSL_INCLUDE_PATH = /usr/local/opt/openssl/include
+}
 
 
 OBJECTS_DIR = build
@@ -429,6 +436,7 @@ win32:!contains(MINGW_THREAD_BUGFIX, 0) {
 
 macx:HEADERS += src/qt/macdockiconhandler.h
 macx:OBJECTIVE_SOURCES += src/qt/macdockiconhandler.mm
+macx:OBJECTIVE_SOURCES += src/qt/macnotificationhandler.mm
 macx:LIBS += -framework Foundation -framework ApplicationServices -framework AppKit
 macx:DEFINES += MAC_OSX MSG_NOSIGNAL=0
 macx:ICON = src/qt/res/icons/bitcoin.icns
