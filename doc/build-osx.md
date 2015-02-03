@@ -1,4 +1,4 @@
-Mac OS X leafcoind build instructions
+Mac OS X omnicoind build instructions
 ====================================
 
 Authors
@@ -26,7 +26,7 @@ Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.
 Notes
 -----
 
-See `doc/readme-qt.rst` for instructions on building Leafcoin-Qt, the
+See `doc/readme-qt.rst` for instructions on building Omnicoin-Qt, the
 graphical user interface.
 
 Tested on OS X 10.5 through 10.8 on Intel processors only. PPC is not
@@ -72,14 +72,14 @@ Installing the dependencies using MacPorts is very straightforward.
 
     sudo port install boost db48@+no_java openssl miniupnpc
 
-### Building `leafcoind`
+### Building `omnicoind`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone git@github.com:leafcoin-project/leafcoin.git leafcoin
-        cd leafcoin
+        git clone git@github.com:omnicoin-project/omnicoin.git omnicoin
+        cd omnicoin
 
-2.  Build leafcoind:
+2.  Build omnicoind:
 
         cd src
         make -f makefile.osx
@@ -97,7 +97,7 @@ You may find it easier to add the following steps to your process.  Since QT 4.8
 
       brew install qt
       
-Once you have QT installed, you might need to relink the new applications so that they appear in your Application folder, but this is unnecessary for compiling Leafcoin.  Now move on to installing the rest of the dependencies.
+Once you have QT installed, you might need to relink the new applications so that they appear in your Application folder, but this is unnecessary for compiling Omnicoin.  Now move on to installing the rest of the dependencies.
 
 #### Install dependencies using Homebrew
 
@@ -115,12 +115,12 @@ If not, you can ensure that the Brew OpenSSL is correctly linked by running
 
 Rerunning "openssl version" should now return the correct version.
 
-### Building `leafcoind`
+### Building `omnicoind`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone git@github.com:leafcoin-project/leafcoin.git leafcoin
-        cd leafcoin
+        git clone git@github.com:omnicoin-project/omnicoin.git omnicoin
+        cd omnicoin
 
 2.  Modify source in order to pick up the `openssl` library.
 
@@ -130,11 +130,11 @@ Rerunning "openssl version" should now return the correct version.
 
         patch -p1 < contrib/homebrew/makefile.osx.patch
 
-*Update*: The above #2 step has been rebuilt here. Now before you proceed to building leafcoind it is coing to be necessary to edit both the makefile and the leafcoin-qt.pro file.  You can find those edits in /contrib/homebrew/
+*Update*: The above #2 step has been rebuilt here. Now before you proceed to building omnicoind it is coing to be necessary to edit both the makefile and the omnicoin-qt.pro file.  You can find those edits in /contrib/homebrew/
 
 What you doing is fixing the locations of openssl, boost, and berkeley-db4 to the correct locations that homebrew installs.
 
-3.  Build leafcoind:
+3.  Build omnicoind:
 
         cd src
         make -f makefile.osx
@@ -146,8 +146,8 @@ What you doing is fixing the locations of openssl, boost, and berkeley-db4 to th
 Creating a release build
 ------------------------
 
-A leafcoind binary is not included in the Leafcoin-Qt.app bundle. You can ignore
-this section if you are building `leafcoind` for your own use.
+A omnicoind binary is not included in the Omnicoin-Qt.app bundle. You can ignore
+this section if you are building `omnicoind` for your own use.
 
 If you are building `litecond` for others, your build machine should be set up
 as follows for maximum compatibility:
@@ -168,10 +168,10 @@ As of December 2012, the `boost` port does not obey `macosx_deployment_target`.
 Download `http://gavinandresen-bitcoin.s3.amazonaws.com/boost_macports_fix.zip`
 for a fix. Some ports also seem to obey either `build_arch` or
 `macosx_deployment_target`, but not both at the same time. For example, building
-on an OS X 10.6 64-bit machine fails. Official release builds of Leafcoin-Qt are
+on an OS X 10.6 64-bit machine fails. Official release builds of Omnicoin-Qt are
 compiled on an OS X 10.6 32-bit machine to workaround that problem.
 
-Once dependencies are compiled, creating `Leafcoin-Qt.app` is easy:
+Once dependencies are compiled, creating `Omnicoin-Qt.app` is easy:
 
     make -f Makefile.osx RELEASE=1
 
@@ -191,20 +191,20 @@ This will make the QT version of the wallet WITHOUT having to use QT Creator (si
 Running
 -------
 
-It's now available at `./leafcoind`, provided that you are still in the `src`
+It's now available at `./omnicoind`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./leafcoind` to get the filename where it should be put, or just try these
+Run `./omnicoind` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=leafcoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Leafcoin/leafcoin.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/Leafcoin/leafcoin.conf"
+    echo -e "rpcuser=omnicoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Omnicoin/omnicoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Omnicoin/omnicoin.conf"
 
 When next you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours.
 
 Other commands:
 
-    ./leafcoind --help  # for a list of command-line options.
-    ./leafcoind -daemon # to start the leafcoin daemon.
-    ./leafcoind help    # When the daemon is running, to get a list of RPC commands
+    ./omnicoind --help  # for a list of command-line options.
+    ./omnicoind -daemon # to start the omnicoin daemon.
+    ./omnicoind help    # When the daemon is running, to get a list of RPC commands

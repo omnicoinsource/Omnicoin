@@ -1,0 +1,7 @@
+/build/
+/debug/
+/release/
+/src/qt/locale/
+*.Debug
+*.Release
+Makefile
