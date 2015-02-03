@@ -9,6 +9,11 @@ CONFIG += no_include_pwd
 CONFIG += thread
 CONFIG += static
 
+USE_QRCODE=1
+USE_UPNP=1
+USE_IPV6=1
+RELEASE=1
+
 # for boost 1.37, add -mt to the boost libraries
 # use: qmake BOOST_LIB_SUFFIX=-mt
 # for boost thread win32 with _win32 sufix
