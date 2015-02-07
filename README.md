@@ -10,5 +10,6 @@ Visit the [Omnicoin Wiki](https://github.com/Omnicoin-Project/Omnicoin/wiki) for
 - [Caffeinewriter](http://brandonanzaldi.com/)
 - [Doctor Blue](http://www.hackforums.net/member.php?action=profile&uid=1439038)
 - [MeshCollider](http://www.hackforums.net/member.php?action=profile&uid=2015410)
+- [Abraham Lincoln](http://www.hackforums.net/member.php?action=profile&uid=1256441)
 - Pillows
 - emanb29
