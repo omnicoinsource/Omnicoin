@@ -13,3 +13,4 @@ Visit the [Omnicoin Wiki](https://github.com/Omnicoin-Project/Omnicoin/wiki) for
 - [Abraham Lincoln](http://www.hackforums.net/member.php?action=profile&uid=1256441)
 - Pillows
 - emanb29
+- Indebitus
