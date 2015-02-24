@@ -1,7 +1,6 @@
 Omnicoin
 ========
+_A cryptocurrency for MyBB communities_
 
-Omnicoin Source code
 
-
-MADE BY CRYPTO MINER http://www.hackforums.net/member.php?action=profile&uid=1302310
+Visit the [Omnicoin Wiki](https://github.com/Omnicoin-Project/Omnicoin/wiki) for more information
